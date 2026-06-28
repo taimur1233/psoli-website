@@ -320,3 +320,4 @@ footer a:hover{color:var(--gold)}
 .vidgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
 .vidgrid .videowrap{margin-top:0}
 @media(max-width:760px){.vidgrid{grid-template-columns:1fr}}
+@media(max-width:760px){.inv-grid{grid-template-columns:repeat(2,1fr)}.istat-grid{grid-template-columns:repeat(2,1fr)}.fin-cards{grid-template-columns:1fr}}
