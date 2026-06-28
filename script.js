@@ -14,3 +14,8 @@ function setLang(lang){var ps=lang==='ps';document.documentElement.lang=ps?'ps':
   document.querySelectorAll('[data-en]').forEach(function(el){var t=ps?(el.dataset.ps||el.dataset.en):el.dataset.en;var s=el.querySelector('.t');if(s){s.textContent=t;}else{el.textContent=t;}});}
 enBtn&&enBtn.addEventListener('click',function(){setLang('en');});
 psBtn&&psBtn.addEventListener('click',function(){setLang('ps');});
+
+// donate page interactions
+document.querySelectorAll('.amts').forEach(function(g){g.querySelectorAll('button').forEach(function(b){b.addEventListener('click',function(){g.querySelectorAll('button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');});});});
+document.querySelectorAll('.don-toggle').forEach(function(t){t.querySelectorAll('button').forEach(function(b){b.addEventListener('click',function(){t.querySelectorAll('button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');});});});
+document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(){var v=b.getAttribute('data-copy');navigator.clipboard&&navigator.clipboard.writeText(v);var o=b.textContent;b.textContent='Copied!';setTimeout(function(){b.textContent=o;},1400);});});
