@@ -280,13 +280,11 @@ footer a:hover{color:var(--gold)}
 /* donate */
 .donate{background:var(--cream)}
 .don-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,5vw,56px);align-items:start;margin-top:10px}
+@media(max-width:900px){.don-grid{grid-template-columns:1fr}}
 .don-card{background:#fff;border:3px solid var(--ink);border-radius:16px;box-shadow:8px 8px 0 var(--ink);padding:28px}
-.don-toggle{display:flex;background:var(--cream);border:2.5px solid var(--ink);border-radius:10px;overflow:hidden;margin-bottom:20px}
-.don-toggle button{flex:1;padding:12px;border:0;background:none;font-family:"Fraunces";font-weight:900;font-size:1rem;cursor:pointer;color:var(--ink);text-transform:uppercase}
-.don-toggle button.on{background:var(--red);color:var(--cream)}
-.amts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.amts button{padding:16px 8px;border:2.5px solid var(--ink);border-radius:10px;background:var(--cream);font-family:"Fraunces";font-weight:900;font-size:1.25rem;color:var(--ink);cursor:pointer;transition:transform .12s var(--ease)}
-.amts button:hover{transform:translateY(-2px)}.amts button.on{background:var(--gold);box-shadow:3px 3px 0 var(--red-deep)}
+.qrwrap{background:#fff;border:3px solid var(--green-deep);border-radius:14px;padding:20px;margin:26px auto 0;width:fit-content;box-shadow:6px 6px 0 var(--green-deep);text-align:center}
+.qrwrap img{width:240px;height:240px;display:block;margin:0 auto;image-rendering:pixelated}
+.qrwrap figcaption{margin-top:12px;font-family:"Mulish";font-weight:800;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--green-deep)}
 .zelle{margin-top:22px;background:var(--mint);border:2.5px solid var(--green-deep);border-radius:12px;padding:18px}
 .zelle b{font-family:"Fraunces";color:var(--green-deep);font-size:1.15rem;display:block;margin-bottom:6px}
 .zelle .addr{font-family:"Mulish";font-weight:800;background:#fff;border:2px solid var(--green-deep);border-radius:8px;padding:10px 14px;margin-top:8px;color:var(--ink);display:flex;justify-content:space-between;align-items:center;gap:10px;word-break:break-all}

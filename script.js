@@ -16,6 +16,4 @@ enBtn&&enBtn.addEventListener('click',function(){setLang('en');});
 psBtn&&psBtn.addEventListener('click',function(){setLang('ps');});
 
 // donate page interactions
-document.querySelectorAll('.amts').forEach(function(g){g.querySelectorAll('button').forEach(function(b){b.addEventListener('click',function(){g.querySelectorAll('button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');});});});
-document.querySelectorAll('.don-toggle').forEach(function(t){t.querySelectorAll('button').forEach(function(b){b.addEventListener('click',function(){t.querySelectorAll('button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');});});});
 document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(){var v=b.getAttribute('data-copy');navigator.clipboard&&navigator.clipboard.writeText(v);var o=b.textContent;b.textContent='Copied!';setTimeout(function(){b.textContent=o;},1400);});});
