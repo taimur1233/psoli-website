@@ -230,7 +230,7 @@ footer a:hover{color:var(--gold)}
 .note{background:#fff7e6;border:2px dashed var(--gold-deep);border-radius:10px;padding:14px 18px;color:#6a5320;font-weight:600;font-size:.95rem;margin-top:24px}
 
 @media(max-width:900px){
-  .menu,.actions .lang,.actions .btn{display:none}
+  .menu,.actions .btn{display:none}
   .burger{display:block}
   .mission{grid-template-columns:1fr} .prog-grid{grid-template-columns:1fr}
   .gal{grid-template-columns:repeat(2,1fr)} .stats .wrap,.ev-grid,.team-grid,.pillars{grid-template-columns:1fr}
@@ -321,3 +321,8 @@ footer a:hover{color:var(--gold)}
 .vidgrid .videowrap{margin-top:0}
 @media(max-width:760px){.vidgrid{grid-template-columns:1fr}}
 @media(max-width:760px){.inv-grid{grid-template-columns:repeat(2,1fr)}.istat-grid{grid-template-columns:repeat(2,1fr)}.fin-cards{grid-template-columns:1fr}}
+
+/* ===== Pashto (پښتو) language mode ===== */
+body.lang-ps h1,body.lang-ps h2,body.lang-ps h3,body.lang-ps h4,body.lang-ps .big,body.lang-ps .btn,body.lang-ps .menu a,body.lang-ps .overlay a,body.lang-ps p,body.lang-ps .lead,body.lang-ps .tag-row,body.lang-ps .inv a,body.lang-ps .istat .lab,body.lang-ps .cap,body.lang-ps input,body.lang-ps .foot-grid h4,body.lang-ps .foot-grid a,body.lang-ps .foot-tag,body.lang-ps .foot-base{font-family:"Noto Naskh Arabic","Mulish",system-ui,sans-serif!important}
+body.lang-ps h1,body.lang-ps .big{line-height:1.5}
+body.lang-ps .tag-row .ps{display:none}
